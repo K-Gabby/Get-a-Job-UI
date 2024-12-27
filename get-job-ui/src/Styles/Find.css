@@ -1,0 +1,168 @@
+/* Container for the Find section */
+.find-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Text content and input fields */
+.find-job {
+    max-width: 50%;
+}
+
+.find-job h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.find-job p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.highlight{
+    color: #06942A;
+    font-weight: bold;
+}
+
+/* Input and search bar */
+.find-job .search-bar {
+    width: 532px;
+    height: 49px;
+    top: 485px;
+    left: 100px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.find-job input[type="text"] {
+    flex-grow: 1;
+    font: Graphik, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    color: #9b9b9b;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    background-color: transparent;
+}
+
+.find-job input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Location dropdown style */
+.location {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    /* height: 100%; */
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    font-size: 16px;
+    gap: 10px;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px; /* Adjust based on the height of the input */
+    left: 0;
+    width: 150px; /* Adjust width as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+
+/* Search icon */
+.find-job .fas.fa-search {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 100%;
+    align-content: center;
+    background-color: #06942A;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+/* Brand section */
+.brand {
+    margin-top: 20px;
+}
+  
+.brand h6 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.brand .brand-icon {
+    display: flex;
+    gap: 10px;
+}
+  
+.brand .brand-icon img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Hero image */
+.find-container img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .find-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .find-job {
+      max-width: 100%;
+    }
+  
+    .find-container img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+}
+
+  
